@@ -24,13 +24,13 @@ class MainView:
     def _create_widgets(self):
         # Crear frames principales
         self.controls_frame = ControlsFrame(self.root)
-        self.controls_frame.grid(row=0, column=0, sticky="nsew")
+        self.controls_frame.grid(row=0, column=0, sticky="nsew",padx=80 , pady=(0, 5))
         
         self.chart_frame = ChartFrame(self.root)
         self.chart_frame.grid(row=0, column=1, rowspan=2, sticky="nsew")
         
         self.results_frame = ResultsFrame(self.root)
-        self.results_frame.grid(row=1, column=0, sticky="nsew")
+        self.results_frame.grid(row=1, column=0, sticky="nsew" ,pady=0)
         
         # Configurar pesos de grid
         self.root.grid_columnconfigure(0, weight=1)

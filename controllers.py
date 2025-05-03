@@ -28,8 +28,8 @@ class FinancialController:
     def _setup_controllers(self):
         # Conectar botones a métodos
         self.view.controls_frame.calculate_btn.config(command=self.calculate_results)
-        self.view.controls_frame.sensitivity_btn.config(
-            command=self.show_sensitivity_analysis)
+        #self.view.controls_frame.sensitivity_btn.config(
+            #command=self.show_sensitivity_analysis)
 
     def calculate_results(self):
         try:

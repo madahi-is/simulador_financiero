@@ -15,7 +15,7 @@ class ChartFrame(ttk.Frame):
 
     def _setup_chart(self):
         self.fig, self.ax = plt.subplots(figsize=(8, 5))
-        self.ax.set_title("Evolución del Ahorro")
+        self.ax.set_title("Evolución del Ahorro en el Tiempo")
         self.ax.set_xlabel("Meses")
         self.ax.set_ylabel("Ahorro Acumulado (Bs.)")
         self.ax.grid(True)
@@ -33,7 +33,7 @@ class ChartFrame(ttk.Frame):
         self.ax.plot(months_range, nominal, 'b-', label='Nominal')
         self.ax.plot(months_range, real, 'r--', label='Real (ajustado por inflación)')
         
-        self.ax.set_title("Evolución del Ahorro")
+        self.ax.set_title("Evolución del Ahorro en el Tiempo " )
         self.ax.set_xlabel("Meses")
         self.ax.set_ylabel("Ahorro Acumulado (Bs.)")
         self.ax.legend()

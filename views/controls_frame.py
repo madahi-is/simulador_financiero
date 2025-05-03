@@ -3,7 +3,7 @@ from tkinter import ttk
 
 class ControlsFrame(ttk.Frame):
     def __init__(self, parent):
-        super().__init__(parent, padding="10")
+        super().__init__(parent, padding="5")
         self._create_widgets()
 
     def _create_widgets(self):
@@ -34,10 +34,10 @@ class ControlsFrame(ttk.Frame):
         
         # Botones
         self.calculate_btn = ttk.Button(self, text="Calcular")
-        self.calculate_btn.grid(row=8, column=0, columnspan=2, pady=10)
+        self.calculate_btn.grid(row=8, column=0, columnspan=2,  pady=(0, 0))
         
-        self.sensitivity_btn = ttk.Button(self, text="Análisis de Sensibilidad")
-        self.sensitivity_btn.grid(row=9, column=0, columnspan=2, pady=5)
+        #self.sensitivity_btn = ttk.Button(self, text="Análisis de Sensibilidad")
+        #self.sensitivity_btn.grid(row=9, column=0, columnspan=2, pady=5)
 
     def _create_input_field(self, label_text, variable, row):
         ttk.Label(self, text=label_text).grid(row=row, column=0, sticky="w", pady=2)

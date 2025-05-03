@@ -3,12 +3,12 @@ from tkinter import ttk
 
 class ResultsFrame(ttk.Frame):
     def __init__(self, parent):
-        super().__init__(parent, padding="10")
+        super().__init__(parent, padding="5")
         self._create_widgets()
 
     def _create_widgets(self):
         ttk.Label(self, text="RESULTADOS", style="Title.TLabel").grid(
-            row=0, column=0, columnspan=2, pady=5)
+            row=0, column=0, columnspan=2, pady=2)
         
         # Resultados principales
         self._create_result_label("Ahorro Mensual:", 1)
