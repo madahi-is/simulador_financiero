@@ -23,7 +23,7 @@ class FinancialController:
         }
         
         # Calcular resultados iniciales
-        self.calculate_results()
+        #self.calculate_results()
 
     def _setup_controllers(self):
         # Conectar botones a métodos

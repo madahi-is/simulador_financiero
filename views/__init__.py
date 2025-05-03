@@ -7,11 +7,13 @@ from .controls_frame import ControlsFrame
 from .chart_frame import ChartFrame
 from .results_frame import ResultsFrame
 from .sensitivity import SensitivityAnalysis
+from .expense_form import ExpenseForm
 
 __all__ = [
     'MainView',
     'ControlsFrame',
     'ChartFrame',
     'ResultsFrame',
-    'SensitivityAnalysis'
+    'SensitivityAnalysis',
+    'ExpenseForm'
 ]
